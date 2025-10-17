@@ -87,13 +87,21 @@ function App() {
                   </a>
                 ))}
                 <a
-                  href="/Ryan-Yarzada-Resume.pdf"
+                  href={`${import.meta.env.BASE_URL}Ryan-Yarzada-Resume.pdf`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  download
                   className="btn btn-primary hidden lg:inline-flex"
                 >
                   View Resume
+                </a>
+                {/* Visible fallback link for verification */}
+                <a
+                  href={`${import.meta.env.BASE_URL}Ryan-Yarzada-Resume.pdf`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hidden lg:block mt-2 text-xs text-gray-500 hover:text-primary-600 break-all"
+                >
+                  {`${import.meta.env.BASE_URL}Ryan-Yarzada-Resume.pdf`}
                 </a>
               </div>
             </div>
@@ -152,14 +160,22 @@ function App() {
                 </div>
                 <div className="pt-4">
                   <a
-                    href="/Ryan-Yarzada-Resume.pdf"
+                    href={`${import.meta.env.BASE_URL}Ryan-Yarzada-Resume.pdf`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    download
                     className="w-full inline-flex justify-center btn btn-primary"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     View Resume
+                  </a>
+                  {/* Visible fallback link for verification (mobile) */}
+                  <a
+                    href={`${import.meta.env.BASE_URL}Ryan-Yarzada-Resume.pdf`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block mt-2 text-xs text-gray-500 hover:text-primary-600 break-all"
+                  >
+                    {`${import.meta.env.BASE_URL}Ryan-Yarzada-Resume.pdf`}
                   </a>
                 </div>
               </div>
