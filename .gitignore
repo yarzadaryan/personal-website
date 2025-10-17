@@ -1,0 +1,7 @@
+﻿# Node / Vite
+node_modules/
+dist/
+.env
+.DS_Store
+npm-debug.log*
+yarn-error.log*
